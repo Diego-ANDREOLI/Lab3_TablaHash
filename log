@@ -1,0 +1,55 @@
+Thu Apr 16 08:29:07 PM UTC 2026: 
+ hashmap.c | 24 ++++++++++++++++++++++++
+ 1 file changed, 24 insertions(+)
+Compilation failed
+In file included from test.c:5:
+hashmap.c: In function ‘insertMap’:
+hashmap.c:63:17: error: ‘HashMap’ {aka ‘struct HashMap’} has no member named ‘Buckets’; did you mean ‘buckets’?
+   63 |     while(map ->Buckets[pos] != NULL){
+      |                 ^~~~~~~
+      |                 buckets
+hashmap.c:64:17: error: ‘HashMap’ {aka ‘struct HashMap’} has no member named ‘Buckets’; did you mean ‘buckets’?
+   64 |         if(map->Buckets[pos]->key == NULL || is_equal(key, map->Buckets[pos]->key) == 1){
+      |                 ^~~~~~~
+      |                 buckets
+hashmap.c:64:65: error: ‘HashMap’ {aka ‘struct HashMap’} has no member named ‘Buckets’; did you mean ‘buckets’?
+   64 |         if(map->Buckets[pos]->key == NULL || is_equal(key, map->Buckets[pos]->key) == 1){
+      |                                                                 ^~~~~~~
+      |                                                                 buckets
+hashmap.c:69:13: error: ‘HashMap’ {aka ‘struct HashMap’} has no member named ‘Buckets’; did you mean ‘buckets’?
+   69 |     if(map->Buckets[pos] == NULL ){
+      |             ^~~~~~~
+      |             buckets
+hashmap.c:70:18: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘->’ token
+   70 |         Pair* map->buckets[pos]= (Pair*)malloc(sizeof(Pair));
+      |                  ^~
+hashmap.c:70:18: error: expected expression before ‘->’ token
+hashmap.c:71:14: error: ‘HashMap’ {aka ‘struct HashMap’} has no member named ‘Buckets’; did you mean ‘buckets’?
+   71 |         map->Buckets[pos]->key = key;
+      |              ^~~~~~~
+      |              buckets
+hashmap.c:72:14: error: ‘HashMap’ {aka ‘struct HashMap’} has no member named ‘Buckeys’; did you mean ‘buckets’?
+   72 |         map->Buckeys[pos]->value = value;
+      |              ^~~~~~~
+      |              buckets
+hashmap.c:74:18: error: ‘HashMap’ {aka ‘struct HashMap’} has no member named ‘Buckets’; did you mean ‘buckets’?
+   74 |     else if(map->Buckets[pos]->key == NULL ){
+      |                  ^~~~~~~
+      |                  buckets
+hashmap.c:75:14: error: ‘HashMap’ {aka ‘struct HashMap’} has no member named ‘Buckets’; did you mean ‘buckets’?
+   75 |         map->Buckets[pos]->key = key;
+      |              ^~~~~~~
+      |              buckets
+hashmap.c:76:14: error: ‘HashMap’ {aka ‘struct HashMap’} has no member named ‘Buckeys’; did you mean ‘buckets’?
+   76 |         map->Buckeys[pos]->value = value;
+      |              ^~~~~~~
+      |              buckets
+hashmap.c:78:32: error: ‘HashMap’ {aka ‘struct HashMap’} has no member named ‘Buckets’; did you mean ‘buckets’?
+   78 |     else if(is_equal(key, map->Buckets[pos]->key) == 1){
+      |                                ^~~~~~~
+      |                                buckets
+hashmap.c:79:14: error: ‘HashMap’ {aka ‘struct HashMap’} has no member named ‘Buckets’; did you mean ‘buckets’?
+   79 |         map->Buckets[pos]->value = value;
+      |              ^~~~~~~
+      |              buckets
+467dc10
