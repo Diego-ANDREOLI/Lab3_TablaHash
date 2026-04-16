@@ -254,3 +254,13 @@ hashmap.c:70:34: error: lvalue required as left operand of assignment
    70 |         (Pair*) map->buckets[pos]= (Pair*)malloc(sizeof(Pair));
       |                                  ^
 e7cfeb3
+Thu Apr 16 08:34:19 PM UTC 2026: 
+ hashmap.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+Compilation failed
+In file included from test.c:5:
+hashmap.c: In function ‘insertMap’:
+hashmap.c:70:34: error: lvalue required as left operand of assignment
+   70 |         (Pair*) map->buckets[pos]= (Pair*)malloc(sizeof(Pair));
+      |                                  ^
+ee5bc3f
