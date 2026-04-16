@@ -161,3 +161,22 @@ hashmap.c:79:14: error: ‘HashMap’ {aka ‘struct HashMap’} has no member n
       |              ^~~~~~~
       |              buckets
 dca2c7d
+Thu Apr 16 08:30:49 PM UTC 2026: 
+ hashmap.c | 22 +++++++++++-----------
+ 1 file changed, 11 insertions(+), 11 deletions(-)
+Compilation failed
+In file included from test.c:5:
+hashmap.c: In function ‘insertMap’:
+hashmap.c:70:18: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘->’ token
+   70 |         Pair* map->buckets[pos]= (Pair*)malloc(sizeof(Pair));
+      |                  ^~
+hashmap.c:70:18: error: expected expression before ‘->’ token
+hashmap.c:72:14: error: ‘HashMap’ {aka ‘struct HashMap’} has no member named ‘buckeys’; did you mean ‘buckets’?
+   72 |         map->buckeys[pos]->value = value;
+      |              ^~~~~~~
+      |              buckets
+hashmap.c:76:14: error: ‘HashMap’ {aka ‘struct HashMap’} has no member named ‘buckeys’; did you mean ‘buckets’?
+   76 |         map->buckeys[pos]->value = value;
+      |              ^~~~~~~
+      |              buckets
+fb5a47f

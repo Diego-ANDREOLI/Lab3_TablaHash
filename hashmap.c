@@ -60,23 +60,23 @@ HashMap * createMap(long capacity) {
 
 void insertMap(HashMap * map, char * key, void * value) {
     int pos = hash(key,map->capacity);
-    while(map ->Buckets[pos] != NULL){
-        if(map->Buckets[pos]->key == NULL || is_equal(key, map->Buckets[pos]->key) == 1){
+    while(map ->buckets[pos] != NULL){
+        if(map->buckets[pos]->key == NULL || is_equal(key, map->buckets[pos]->key) == 1){
             break;
         }
         pos += 1;
     }
-    if(map->Buckets[pos] == NULL ){
-        Pair* map->Buckets[pos]= (Pair*)malloc(sizeof(Pair));
-        map->Buckets[pos]->key = key;
-        map->Buckeys[pos]->value = value;
+    if(map->buckets[pos] == NULL ){
+        Pair* map->buckets[pos]= (Pair*)malloc(sizeof(Pair));
+        map->buckets[pos]->key = key;
+        map->buckeys[pos]->value = value;
     }
-    else if(map->Buckets[pos]->key == NULL ){
-        map->Buckets[pos]->key = key;
-        map->Buckeys[pos]->value = value;
+    else if(map->buckets[pos]->key == NULL ){
+        map->buckets[pos]->key = key;
+        map->buckeys[pos]->value = value;
     }
-    else if(is_equal(key, map->Buckets[pos]->key) == 1){
-        map->Buckets[pos]->value = value;
+    else if(is_equal(key, map->buckets[pos]->key) == 1){
+        map->buckets[pos]->value = value;
         
     }
 
