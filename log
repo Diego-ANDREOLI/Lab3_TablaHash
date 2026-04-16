@@ -300,3 +300,17 @@ In function ‘strcpy’,
 /nix/store/41pf3md9zgpda9kwh6rzn5kaddf7i0lp-glibc-2.40-66-dev/include/bits/string_fortified.h:81:10: note: in a call to built-in function ‘__builtin_strcpy’
 cc1: all warnings being treated as errors
 2f57ae5
+Thu Apr 16 08:41:10 PM UTC 2026: 
+ hashmap.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+Compilation failed
+In file included from /nix/store/41pf3md9zgpda9kwh6rzn5kaddf7i0lp-glibc-2.40-66-dev/include/string.h:548,
+                 from test.c:3:
+In function ‘strcpy’,
+    inlined from ‘insertMap’ at hashmap.c:76:9:
+/nix/store/41pf3md9zgpda9kwh6rzn5kaddf7i0lp-glibc-2.40-66-dev/include/bits/string_fortified.h:81:10: error: argument 1 null where non-null expected [-Werror=nonnull]
+   81 |   return __builtin___strcpy_chk (__dest, __src, __glibc_objsize (__dest));
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/nix/store/41pf3md9zgpda9kwh6rzn5kaddf7i0lp-glibc-2.40-66-dev/include/bits/string_fortified.h:81:10: note: in a call to built-in function ‘__builtin_strcpy’
+cc1: all warnings being treated as errors
+660592c
