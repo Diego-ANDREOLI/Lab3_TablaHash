@@ -67,9 +67,10 @@ void insertMap(HashMap * map, char * key, void * value) {
         pos += 1;
     }
     if(map->buckets[pos] == NULL ){
-        (Pair*) map->buckets[pos] = (Pair*)malloc(sizeof(Pair));
+        map->buckets[pos] = (Pair*)malloc(sizeof(Pair));
         strcpy(map->buckets[pos]->key,key);
         map->buckets[pos]->value = value;
+        map->size += 1;
     }
     else if(map->buckets[pos]->key == NULL ){
         strcpy(map->buckets[pos]->key,key);
