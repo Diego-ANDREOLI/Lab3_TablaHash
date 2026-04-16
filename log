@@ -234,3 +234,13 @@ hashmap.c:70:9: error: cannot convert to a pointer type
    70 |         (Pair*)* map->buckets[pos]= (Pair*)malloc(sizeof(Pair*));
       |         ^
 fcfba90
+Thu Apr 16 08:32:48 PM UTC 2026: 
+ hashmap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+Compilation failed
+In file included from test.c:5:
+hashmap.c: In function ‘insertMap’:
+hashmap.c:70:34: error: lvalue required as left operand of assignment
+   70 |         (Pair*) map->buckets[pos]= (Pair*)malloc(sizeof(Pair*));
+      |                                  ^
+7a0752b
