@@ -693,3 +693,9 @@ hashmap.c:188:36: error: invalid type argument of ‘->’ (have ‘HashMap’ {
   188 |         if(aux[i] != NULL && map[i]->key != NULL)
       |                                    ^~
 d7b3081
+Sat Apr 18 10:16:56 PM UTC 2026: 
+ hashmap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  17|0
+total_score: 60/60
+3c4a4e0
