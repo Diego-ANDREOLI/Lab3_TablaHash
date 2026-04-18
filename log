@@ -484,3 +484,9 @@ hashmap.c:146:25: error: ‘pos’ undeclared (first use in this function); did 
       |                         pow
 hashmap.c:146:25: note: each undeclared identifier is reported only once for each function it appears in
 804fb2f
+Sat Apr 18 09:42:42 PM UTC 2026: 
+ hashmap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  12|2
+total_score: 40/60
+93120a5
