@@ -683,3 +683,13 @@ Sat Apr 18 10:15:59 PM UTC 2026:
  tests:  16|1
 total_score: 50/60
 096f7cd
+Sat Apr 18 10:16:46 PM UTC 2026: 
+ hashmap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+Compilation failed
+In file included from test.c:5:
+hashmap.c: In function ‘enlarge’:
+hashmap.c:188:36: error: invalid type argument of ‘->’ (have ‘HashMap’ {aka ‘struct HashMap’})
+  188 |         if(aux[i] != NULL && map[i]->key != NULL)
+      |                                    ^~
+d7b3081
