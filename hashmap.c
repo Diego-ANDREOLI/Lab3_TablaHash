@@ -156,7 +156,7 @@ Pair * nextMap(HashMap * map) {
     for (int pos = map->current; pos < map->capacity; pos = (pos +1) % map->capacity){
         if(map->buckets[pos] != NULL && map->buckets[pos]->key != NULL){
             map->current = pos;
-            return map->buckets[pos];
+            return map->buckets[pos]->value;
         }
     }
 
