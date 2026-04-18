@@ -184,8 +184,8 @@ void enlarge(HashMap * map) {
         map->buckets[i] = NULL;
     }
     map->size = 0;
-    for ( int i = 0; i < map->capacity/2; i++){
-        if(map->buckets[pos] != NULL && map->buckets[pos]->key != NULL){
+    for (int i = 0; i < map->capacity/2; i++){
+        if(map->buckets[i] != NULL && map->buckets[i]->key != NULL){
             {
                 insertMap(map, aux[i]->key,aux[i]->value);
             }
