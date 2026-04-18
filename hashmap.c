@@ -180,7 +180,7 @@ void enlarge(HashMap * map) {
     Pair **aux = map->buckets;
     map->capacity = map->capacity * 2;
     map->buckets = (Pair** )malloc(sizeof(Pair * )* map->capacity);
-    if (int i = 0; i < map->capacity; i++){
+    for (int i = 0; i < map->capacity; i++){
         map->buckets[i] = NULL;
     }
     map->size = 0;
