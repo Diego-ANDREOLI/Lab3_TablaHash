@@ -143,7 +143,7 @@ void eraseMap(HashMap * map,  char * key) {
 
 Pair * firstMap(HashMap * map) {
 
-    return NULL;
+    return map->bucket[0];
 }
 
 Pair * nextMap(HashMap * map) {
