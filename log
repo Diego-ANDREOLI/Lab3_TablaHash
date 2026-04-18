@@ -472,3 +472,15 @@ Sat Apr 18 09:37:25 PM UTC 2026:
  tests:  12|2
 total_score: 40/60
 23e2ddb
+Sat Apr 18 09:42:30 PM UTC 2026: 
+ hashmap.c | 10 ++++++----
+ 1 file changed, 6 insertions(+), 4 deletions(-)
+Compilation failed
+In file included from test.c:5:
+hashmap.c: In function ‘firstMap’:
+hashmap.c:146:25: error: ‘pos’ undeclared (first use in this function); did you mean ‘pow’?
+  146 |         if(map->buckets[pos] != NULL){
+      |                         ^~~
+      |                         pow
+hashmap.c:146:25: note: each undeclared identifier is reported only once for each function it appears in
+804fb2f

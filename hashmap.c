@@ -142,12 +142,14 @@ void eraseMap(HashMap * map,  char * key) {
 // Recuerde actualizar el índice.
 
 Pair * firstMap(HashMap * map) {
-    int pos = 0;
-    while(map ->buckets[pos] == NULL){
-        pos = (pos +1) % map->capacity;
+    for(int i = 0; i < map->capacity; i++){
+        if(map->buckets[pos] != NULL){
+            map->current = i;
+            return map->buckets[i];
+        }
     }
 
-    return map->buckets[pos];
+    return NULL;
 }
 
 Pair * nextMap(HashMap * map) {
