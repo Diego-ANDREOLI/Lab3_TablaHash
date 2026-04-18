@@ -334,3 +334,27 @@ Thu Apr 16 08:56:35 PM UTC 2026:
  tests:  4|5
 total_score: 15/60
 346449d
+Sat Apr 18 09:21:16 PM UTC 2026: 
+ hashmap.c | 9 +++++++++
+ 1 file changed, 9 insertions(+)
+Compilation failed
+In file included from test.c:5:
+hashmap.c: In function ‘createMap’:
+hashmap.c:49:22: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘<’ token
+   49 |     for(int i = 0, i < capacity, i++){
+      |                      ^
+hashmap.c:52:18: error: expected ‘)’ before ‘;’ token
+   52 |     map->size = 0;
+      |                  ^
+      |                  )
+hashmap.c:49:8: note: to match this ‘(’
+   49 |     for(int i = 0, i < capacity, i++){
+      |        ^
+hashmap.c:59:1: error: expected expression before ‘}’ token
+   59 | }
+      | ^
+hashmap.c:49:13: error: unused variable ‘i’ [-Werror=unused-variable]
+   49 |     for(int i = 0, i < capacity, i++){
+      |             ^
+cc1: all warnings being treated as errors
+508e194

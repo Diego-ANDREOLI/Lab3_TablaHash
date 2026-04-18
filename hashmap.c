@@ -45,6 +45,15 @@ int is_equal(void* key1, void* key2){
 // Inicialice el índice current a -1.
 
 HashMap * createMap(long capacity) {
+    HashMap *map =(HashMap*) malloc(sizeof(HashMap));
+    for(int i = 0, i < capacity, i++){
+        map->buckets = (pair*)malloc(sizeof(pair));
+    };
+    map->size = 0;
+    map->capacity = capacity;
+    map->current = -1;
+
+    
 
     return NULL;
 }
